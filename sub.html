@@ -1,0 +1,2301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 웹폰트 연결 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean" rel="stylesheet">
+    <!-- SVG 연결 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 메뉴 -->
+    <div class="menu">
+        <div class="menu_top">
+            <!--메뉴-->
+            <ul class="menu_left">
+                <li><a href="#"><i class="material-icons">place</i>대한민국</a></li>
+                <li>한국어</li>
+                <li><i class="material-icons">call</i>02-3452-1921</li>
+            </ul>
+            <!--로고-->
+            <a href="index.html" class="header-logo">
+                <img src="img/logo.png" style="height: 26px">
+            </a>
+            <!--부가메뉴-->
+            <ul class="menu_right">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="#"><i class="material-icons">favorite_border</i></a></li>
+                <li><a href="cart.html"><i class="material-icons">work_outline</i>쇼핑백</a></li>
+                <li class="big"><a href="#"><i class="material-icons" style="font-size: 25px">search</i></a></li>
+            </ul>
+        </div>
+        <div class="menu_bottom">
+            <ul>
+                <li><a href="#">WHAT'S NEW</a></li>
+                <li><a href="#">여성</a></li>
+                <li><a href="#">남성</a></li>
+                <li><a href="#">선물제안</a></li>
+                <li><a href="#">주얼리 & 시계</a></li>
+                <li><a href="#">뷰티</a></li>
+                <li><a href="#">데코</a></li>
+                <li><a href="#">구찌 스토리</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 메인 배너 -->
+    <!-- 메인 배너 이미지 -->
+    <div class="product_banner">
+        <!--        <img src="img/sub_banner.jpg">-->
+        <!-- 메인 타이틀 -->
+        <div class="product_banner_tit">
+            <h1>여성 핸드백</h1>
+            <p>가죽 및 프레셔스 스킨 소재 토트, 탑 핸들, 숄더백, 벨트백 등 여성 시그니처 라인 구찌 핸드백.</p>
+        </div>
+    </div>
+    <!-- 필터 -->
+    <div class="filter clearfix">
+        <!-- 왼쪽 -->
+        <nav class="filter_left">
+            <ul>
+                <li class="after_line"><a href="#">여성</a></li>
+                <li>핸드백</li>
+            </ul>
+        </nav>
+        <!-- 오른쪽 -->
+        <nav class="filter_right">
+            <ul>
+                <!-- 카테고리 필터 -->
+                <li class="after_line">
+                    <div class="dropdown_wrap">
+                       <!-- 보이는 드롭다운 -->
+                        <p class="drop_tit">카테고리<span class="material-icons">keyboard_arrow_down</span>
+                        </p>
+                        <!-- 선택할 것 -->
+                        <div class="drop_choice">
+                            <ul>
+                                <li><a href="#">모두보기</a></li>
+                                <li><a href="#">탑 핸들백</a></li>
+                                <li><a href="#">토트백</a></li>
+                                <li><a href="#">숄더백</a></li>
+                                <li><a href="#">크로스백</a></li>
+                                <li><a href="#">벨트백 & 백팩</a></li>
+                                <li><a href="#">미니백</a></li>
+                                <li><a href="#">클러치</a></li>
+                                <li><a href="#">뉴 컬렉션: 구찌 주미</a></li>
+                                <li><a href="#">프레셔스 스킨</a></li>
+                                <li><a href="#">구찌의 선택</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- //카테고리 필터 -->
+                
+                <!-- 라인 필터 -->
+                <li class="after_line">
+                    <div class="dropdown_wrap">
+                       <!-- 보이는 드롭다운 -->
+                        <p class="drop_tit">라인<span class="material-icons">keyboard_arrow_down</span>
+                        </p>
+                        <!-- 선택할 것 -->
+                        <div class="drop_choice">
+                            <ul>
+                                <li><a href="#">모두보기</a></li>
+                                <li><a href="#">GG 마몽</a></li>
+                                <li><a href="#">구찌 주미</a></li>
+                                <li><a href="#">구찌 1955 홀스빗</a></li>
+                                <li><a href="#">네오 빈티지</a></li>
+                                <li><a href="#">디오니서스</a></li>
+                                <li><a href="#">라자</a></li>
+                                <li><a href="#">브로드웨이</a></li>
+                                <li><a href="#">소호</a></li>
+                                <li><a href="#">실비</a></li>
+                                <li><a href="#">실비1969</a></li>
+                                <li><a href="#">알리</a></li>
+                                <li><a href="#">오피디아</a></li>
+                                <li><a href="#">패들락</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- //라인 필터 -->
+                
+                <!-- 필터 필터 -->
+                <li class="filter_menu">
+                    <div class="dropdown_wrap">
+                       <!-- 보이는 드롭다운 -->
+                        <p class="drop_tit">필터<span class="material-icons">keyboard_arrow_down</span>
+                        </p>
+                        <!-- 선택할 것 -->
+                        <div class="filter_choice">
+                            <div class="filter_wrap">
+                               <!-- 컬러 -->
+                               <div class="filter_color">
+                                   <h3>컬러</h3>
+                                   <ul>
+                                      
+                                       <!-- 모두 보기 -->
+                                       <li>
+                                           <label class="filter_checkbox">
+                                               <input type="checkbox" name="filter_all" value="filter_all" checked>
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">모두 보기</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 그레이 -->
+                                       <li>
+                                           <label class="filter_checkbox">
+                                               <input type="checkbox" name="gray" value="gray">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">그레이</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 그린 -->
+                                       <li>
+                                           <label class="filter_checkbox" >
+                                               <input type="checkbox" name="green" value="green">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">그린</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 뉴트럴 -->
+                                       <li>
+                                           <label class="filter_checkbox" >
+                                               <input type="checkbox" name="neutral" value="neutral">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">뉴트럴</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 레드 -->
+                                       <li>
+                                           <label class="filter_checkbox" >
+                                               <input type="checkbox" name="red" value="red">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">레드</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 베이지 -->
+                                       <li>
+                                           <label class="filter_checkbox" >
+                                               <input type="checkbox" name="beige" value="beige">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">베이지</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 브라운 -->
+                                       <li>
+                                           <label class="filter_checkbox" >
+                                               <input type="checkbox" name="brown" value="brown">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">브라운</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 블랙 -->
+                                       <li>
+                                           <label class="filter_checkbox" >
+                                               <input type="checkbox" name="black" value="black">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">블랙</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 블루 -->
+                                       <li>
+                                           <label class="filter_checkbox" >
+                                               <input type="checkbox" name="blue" value="blue">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">블루</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 옐로우 -->
+                                       <li>
+                                           <label class="filter_checkbox" >
+                                               <input type="checkbox" name="yellow" value="yellow">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">옐로우</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 오렌지 -->
+                                       <li>
+                                           <label class="filter_checkbox">
+                                               <input type="checkbox"  name="orange" value="orange">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">오렌지</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 와인 -->
+                                       <li>
+                                           <label class="filter_checkbox">
+                                               <input type="checkbox"  name="wine" value="wine">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">와인</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 핑크 -->
+                                       <li>
+                                           <label class="filter_checkbox">
+                                               <input type="checkbox" name="pink" value="pink">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">핑크</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 화이트 -->
+                                       <li>
+                                           <label class="filter_checkbox" >
+                                               <input type="checkbox" name="white" value="white">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">화이트</span>
+                                           </label>
+                                       </li>
+                                   </ul>
+                               </div>
+                               <!-- 소재 -->
+                               <div class="material">
+                                   <h3>소재</h3>
+                                   <ul>
+                                       <li>
+                                           <label class="filter_checkbox">
+                                               <input type="checkbox" name="material_all" value="material_all" checked>
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">모두 보기</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- GG 캔버스 -->
+                                       <li>
+                                           <label class="filter_checkbox">
+                                               <input type="checkbox" name="gg_canvas" value="gg_canvas">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">GG 캔버스</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 고급 레더 -->
+                                       <li>
+                                           <label class="filter_checkbox">
+                                               <input type="checkbox" name="high_leather" value="high_leather">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">고급 레더</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 기타 소재 -->
+                                       <li>
+                                           <label class="filter_checkbox">
+                                               <input type="checkbox" name="etc_material" value="etc_material">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">기타 소재</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 레더 -->
+                                       <li>
+                                           <label class="filter_checkbox">
+                                               <input type="checkbox" name="leather" value="leather">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">레더</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 벨벳 -->
+                                       <li>
+                                           <label class="filter_checkbox">
+                                               <input type="checkbox" name="velvet" value="velvet">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">벨벳</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 스웨이드 -->
+                                       <li>
+                                           <label class="filter_checkbox">
+                                               <input type="checkbox" name="suede" value="suede">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">스웨이드</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 캔버스 -->
+                                       <li>
+                                           <label class="filter_checkbox">
+                                               <input type="checkbox" name="canvas" value="canvas">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">캔버스</span>
+                                           </label>
+                                       </li>
+                                       
+                                       <!-- 패브릭 -->
+                                       <li>
+                                           <label class="filter_checkbox">
+                                               <input type="checkbox" name="fabric" value="fabric">
+                                               <span class="custom_check">
+                                                   <i class="material-icons">done</i>
+                                               </span>
+                                               <span class="filter_label">패브릭</span>
+                                           </label>
+                                       </li>
+                                       <br>
+                                   </ul>
+                               </div>
+                            </div>
+                            <!-- 버튼 -->
+                            <div class="filter_btn_all">
+                                <p>다양한 옵션을 한 번에 선택할 수 있습니다.</p>
+                                <div class="filter_btn">
+                                    <button class="filter_close">닫기</button>
+                                    <button class="filter_apply">적용</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //필터 필터 -->
+                
+                <!-- 정렬 기준 필터 -->
+                <li class="before_line">
+                    <!-- 라인 필터 -->
+                    <div class="dropdown_wrap">
+                       <!-- 보이는 드롭다운 -->
+                        <p class="drop_tit"><span>정렬기준 : </span>신상품<span class="material-icons">keyboard_arrow_down</span>
+                        </p>
+                        <!-- 선택할 것 -->
+                        <div class="drop_choice">
+                            <ul>
+                                <li><a href="#">신상품</a></li>
+                                <li><a href="#">가격-높은 가격순</a></li>
+                                <li><a href="#">가격-낮은 가격순</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- //정렬 기준 필터 -->
+            </ul>
+        </nav>
+    </div>
+    <!-- 콘텐츠 전체 -->
+    <div class="product_wrap">
+        <!-- 상품 -->
+        <div class="products clearfix">
+            <ul>
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag2.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag3.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag4.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                
+                <li class="bg_big">
+                    <div class="all_product">
+                        <img src="img/sub_big1.jpg">
+                    </div>
+                </li>
+                
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                
+                <li class="bg_big">
+                    <div class="all_product">
+                        <img src="img/sub_big2.jpg">
+                    </div>
+                </li>
+                
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <li class="bg_big">
+                    <div class="all_product">
+                        <img src="img/sub_big3.jpg">
+                    </div>
+                </li>
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <li class="bg_big">
+                    <div class="all_product">
+                        <img src="img/sub_big4.jpg">
+                    </div>
+                </li>
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <li class="bg_big">
+                    <div class="all_product">
+                        <img src="img/sub_big5.jpg">
+                    </div>
+                </li>
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <li class="bg_big">
+                    <div class="all_product">
+                        <img src="img/sub_big6.jpg">
+                    </div>
+                </li>
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+                
+                <!-- 상품 -->
+                <li>
+                    <div class="all_product">
+                        <div class="be_hover">
+                            <!-- 이미지 -->
+                            <div class="be_hover_img">
+                                <img src="img/sub_bag1.jpg">
+                            </div>
+                            <!-- //이미지 -->
+                        </div>
+                        <!-- hover 후 -->
+                        <div class="af_hover">
+                            <div class="cart_btn">
+                                <div class="af_cart_btn">
+                                    <button><span class="material-icons">favorite_border</span></button>
+                                </div>
+                                <div class="af_cart_btn_hover">
+                                    <button title="관심 상품 추가"><span class="material-icons">favorite</span></button>
+                                </div>
+                            </div>
+                            <a href="product.html">
+                                <div class="af_slide">
+                                    <div class="af_hover_slide">
+                                        <img src="img/sub_bag1_hover.jpg">
+                                    </div>
+                                    <div class="af_slide_left"><a href="#"><span class="material-icons">keyboard_arrow_left</span></a></div>
+                                    <div class="af_slide_right"><a href="#"><span class="material-icons">keyboard_arrow_right</span></a></div>
+                                </div>
+                            </a>
+                            <a href="product.html">
+                                <div class="af_hover_txt">
+                                    <h2>구찌 1955 홀스빗 스몰 탑 핸들 백</h2>
+                                    <p>₩ 3,100,000</p>
+                                    <a class="shopping" href="product.html">쇼핑하기<i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <!-- //hover 후 -->
+                        <!-- 장바구니 버튼 -->
+                        <div class="cart_btn">
+                            <div class="be_cart_btn">
+                                <button><span class="material-icons">favorite_border</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- //상품 -->
+            </ul>
+            
+            <div class="product_more_btn">
+                <a href="#">모두 보기</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <!-- 위로 올라가기 -->
+        <a class="up_btn" href="#"><i class="material-icons">keyboard_arrow_up</i></a>
+        <!-- 푸터 전체 -->
+        <div class="footer_all">
+            <!-- 푸터 윗부분 -->
+            <div class="footer_top">
+                <!-- 푸터 리스트 -->
+                <div class="footers">
+                    <div class="footer_group_title">
+                        특별한 서비스
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="material-icons">card_giftcard</i>구찌 선물포장 서비스</a></li>
+                        <li><a href="#"><i class="material-icons">card_giftcard</i>무이자 할부 서비스</a></li>
+                        <li><a href="#"><i class="material-icons">deck</i>Gucci Osteria da Massimo Bottura</a></li>
+                    </ul>
+                </div>
+                <div class="footers">
+                    <div class="footer_group_title">
+                        고객 문의
+                    </div>
+                    <ul>
+                        <li><a href="#"><strong>클라이언트 서비스</strong></a></li>
+                        <li><a href="#"><strong>자주 묻는 질문(FAQ)</strong></a></li>
+                        <li><a href="#"><strong>교환/환불 정책</strong></a></li>
+                        <li><a href="#">쇼핑가이드</a></li>
+                    </ul>
+                </div>
+                <div class="footers">
+                    <div class="footer_group_title">
+                        기업 정보
+                    </div>
+                    <ul>
+                        <li><a href="#">Gucci 정보</a></li>
+                        <li><a href="#">Gucci Garden</a></li>
+                        <li><a href="#">Gucci Equilibrium</a></li>
+                        <li><a href="#">Code of Ethics</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                        <li><a href="#">이용약관</a></li>
+                    </ul>
+                </div>
+                <div class="footers">
+                    <div class="footer_group_title">
+                        구찌를 만나보세요
+                    </div>
+                    <ul>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#e5dfd9" viewBox="0 0 24 24" class="facebook">
+                                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" /></svg>Facebook</a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#e5dfd9" viewBox="0 0 24 24" class="instagram">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg> Gucci</a></li>
+                        <li><a href="#"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#e5dfd9" viewBox="0 0 24 24" class="instagram">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg> Gucci Beauty</a></a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#e5dfd9" viewBox="0 0 24 24" class="youtube">
+                                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" /></svg>YouTube</a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#e5dfd9" viewBox="0 0 24 24" class="twitter">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" /></svg>Twitter</a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#e5dfd9" viewBox="0 0 24 24" class="kakao">
+                                    <path d="M12 1c-6.628 0-12 4.573-12 10.213 0 2.39.932 4.591 2.427 6.164l-2.427 5.623 7.563-2.26c9.495 2.598 16.437-3.251 16.437-9.527 0-5.64-5.372-10.213-12-10.213z" /></svg>Kakao Talk Channel</a></li>
+                    </ul>
+                </div>
+                <div class="footers">
+                    <form action="" method="get">
+                        <div class="footer_group_title">
+                            매장 찾기
+                        </div>
+                        <input type="text" placeholder="국가, 지역 또는 도시">
+                        <input type="submit" value=">">
+                    </form>
+                </div>
+            </div>
+            <div class="footer_top">
+                <p>
+                    구찌 코리아 유한회사<br>
+                    대표자: 카림 페투스 / 서울시 강남구 영동대로 517, 35층(삼성동, 아셈타워) / 사업자등록번호: 120-81-79834<br>
+                    통신판매업 신고번호 제 2015-서울강남-00052 호 (<a href="#">사업자 정보 확인</a>)<br>
+                    개인정보보호책임자: 유인경 / 호스팅 서비스: Rackspace Hosting<br>
+                    클라이언트서비스센터 02-3452-1921 메일 문의 <a href="mailto: clientservice.kr@gucci.com">clientservice.kr@gucci.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body></html>

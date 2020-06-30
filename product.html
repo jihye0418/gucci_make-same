@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 웹폰트 연결 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean" rel="stylesheet">
+    <!-- SVG 연결 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 메뉴 -->
+    <div class="menu menu_no">
+        <div class="menu_top">
+            <!--메뉴-->
+            <ul class="menu_left">
+                <li><a href="#"><i class="material-icons">place</i>대한민국</a></li>
+                <li>한국어</li>
+                <li><i class="material-icons">call</i>02-3452-1921</li>
+            </ul>
+            <!--로고-->
+            <a href="index.html" class="header-logo">
+            </a>
+            <!--부가메뉴-->
+            <ul class="menu_right">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="#"><i class="material-icons">favorite_border</i></a></li>
+                <li><a href="cart.html"><i class="material-icons">work_outline</i>쇼핑백</a></li>
+                <li class="big"><a href="#"><i class="material-icons" style="font-size: 25px">search</i></a></li>
+            </ul>
+        </div>
+        <div class="menu_bottom">
+            <ul>
+                <li><a href="#">WHAT'S NEW</a></li>
+                <li><a href="#">여성</a></li>
+                <li><a href="#">남성</a></li>
+                <li><a href="#">선물제안</a></li>
+                <li><a href="#">주얼리 & 시계</a></li>
+                <li><a href="#">뷰티</a></li>
+                <li><a href="#">데코</a></li>
+                <li><a href="#">구찌 스토리</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 상품 슬라이드 전체 -->
+    <div class="bag_slide">
+        <!-- 상품 슬라이드 이미지 -->
+        <div class="bag_slide_img bag_slide_left">
+            <img src="img/product_slide1.jpg">
+        </div>
+        <div class="bag_slide_img bag_slide_right">
+            <img src="img/product_slide2.jpg">
+        </div>
+        <!-- 텍스트 -->
+        <div class="bag_slide_txt">
+            <h1>구찌 1955 홀스빗 스몰 탑 핸들 백</h1>
+            <p class="bag_price">₩ 3,100,000</p>
+            <button class="bag_option">
+                <span class="bag_color" style="background-color: #000000;"></span>
+                <span class="bag_color_tit">블랙 가죽<i class="material-icons">expand_more</i></span>
+            </button><br>
+            <a class="ini" href="#">이니셜 서비스</a>
+            <p class="bag_have">재고 보유</p>
+            <p class="bag_have_sub">1~3일 이내 발송 가능한 상품입니다.</p>
+            <button class="to_cart">쇼핑백에 담기</button>
+        </div>
+        <!-- 슬라이드 컨트롤러 -->
+        <a href="#" class="bag_slide_prev"><i class="material-icons">keyboard_arrow_left</i></a>
+        <a href="#" class="bag_slide_next"><i class="material-icons">keyboard_arrow_right</i></a>
+        <!-- 슬라이드 페이지 표시 -->
+        <div class="bag_slide_page">
+            <span current>1</span>
+            /
+            <span total>9</span>
+        </div>
+        <!-- 가방 고정메뉴 -->
+        <div class="bag_fix_menu clearfix">
+            <!-- 왼쪽 -->
+            <nav class="bag_menu_left">
+                <ol>
+                    <li class="after_line"><a href="#">여성</a></li>
+                    <li><a href="#">핸드백</a></li>
+                </ol>
+            </nav>
+            <!-- 오른쪽 -->
+            <div class="bag_menu_right">
+                <ul>
+                    <li class="after_line"><a href="#"><i class="material-icons">location_on</i>매장 재고 확인</a></li>
+                    <li class="after_line"><a href="#">도움이 필요하세요?</a></li>
+                    <li><a href="#"><i class="material-icons big_icon">share</i></a></li>
+                    <li class="cart_btn_wrap">
+                        <button class="cart_btn" title="관심 상품 추가"><i class="material-icons big_icon">favorite_border</i></button>
+                        <button class="cart_btn1" title="관심 상품 추가"><i class="material-icons big_icon">favorite</i></button>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- 하단 콘텐츠 -->
+    <div class="bag_content_all">
+        <!-- 상품 정보 전체 -->
+        <div class="all_bag_infor">
+            <div class="bag_container">
+                <!-- 왼쪽 -->
+                <div class="bag_infor_left">
+                    <div class="bag_another">
+                        <div class="bag_an_tit">
+                            <p>다른 스타일</p>
+                        </div>
+                        <div class="bag_an_img clearfix">
+                            <div class="an_img">
+                                <a href="#">
+                                    <img src="img/product_another1.png">
+                                </a>
+                            </div>
+                            <div class="an_img">
+                                <a href="#">
+                                    <img src="img/product_another2.png">
+                                </a>
+                            </div>
+                            <div class="an_img">
+                                <a href="#">
+                                    <img src="img/product_another3.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <!-- 설명1 -->
+                        <div class="accordion_item">
+                            <p class="accordion_tit">
+                                상품 취급 시 주의사항
+                            </p>
+                            <div class="accordion_txt_all">
+                                <div class="accordion_txt">
+                                    <p>구찌는 제품 제작 시 소재 선택에 신중을 기울입니다. 제품의 수명을 연장하기 위해 취급에 주의하여 주시기 바랍니다.</p>
+                                    <ul>
+                                        <li>직사광선, 열 및 비에 노출되지 않도록 주의하십시오. 제품이 물에 젖은 경우 그 즉시 부드러운 천으로 닦아 주십시오.</li>
+                                        <li>모양을 유지하고 습기를 흡수할 수 있도록 핸드백에 티슈 페이퍼를 채워 넣고, 구입 시 제공된 플란넬 백 안에 보관하시기 바랍니다.</li>
+                                        <li>가방 형태에 영향을 줄 수 있는 무거운 물건을 휴대하지 마십시오.</li>
+                                        <li>부드러운 재질의 마른 천으로 제품을 닦아 주십시오.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //설명1 -->
+                        <!-- 설명2 -->
+                        <div class="accordion_item">
+                            <p class="accordion_tit">
+                                배송 정보
+                            </p>
+                            <div class="accordion_txt_all">
+                                <div class="accordion_txt">
+                                    <p>Gucci 공식 온라인 스토어를 통하여 판매되는 모든 상품은 구찌코리아의 지정 택배사인 일양로지스를 통해 고객님께 배송됩니다.</p>
+                                    <p>고객님께서 구매하신 상품의 교환/반품 및 AS접수 또한 일양로지스를 통하여 배송할 것을 권장 드리며, 구찌코리아의 지정 택배사인 일양로지스 이외의 타택배를 이용하여 발생된 입고 지연 및 분실에 대하여 구찌코리아는 책임을 지지 않습니다.</p>
+                                    <p>(1) 배송 지역 : 대한민국 내 전 지역</p>
+                                    <p>(2) 배송 비 : <br>
+                                        - 주문 상품 배송 : 무료 (구찌코리아 부담)<br>
+                                        - 교환/환불 : 무료(구찌코리아 부담)<br>
+                                        - 수선 상품 : 품질보증 기간 관계 없이 따라 상이함
+                                    </p>
+                                    <p>(3) 배송사 정보 : 일양로지스 (02-3277-9500, <a href="https://www.ilyanglogis.com/" target="_blank">www.ilyanglogis.com</a>)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //설명2 -->
+                        <div class="accordion_item">
+                            <p class="accordion_tit">
+                                교환/환불 정보
+                            </p>
+                            <div class="accordion_txt_all">
+                                <div class="accordion_txt">
+                                    <p>Gucci 공식 온라인 스토어를 통하여 구매하신 상품은 물품 수령일로부터 14일 이내에 교환/반품이 가능합니다.</p>
+                                    <p>구매하신 모든 상품의 교환은 전국의 구찌 코리아 온/오프라인 직영 판매처에서 가능합니다.</p>
+                                    <p>단, 환불의 경우 구매처를 통해서만 가능합니다. </p>
+                                    <p>※ 환불은 최초 구매처에서만 가능합니다. </p>
+                                    <p>다음의 경우 교환/반품이 불가능 합니다.<br>
+                                        (1) 상품이 훼손된 경우<br>
+                                        (2) 고객님의 사용 또는 일부 소비에 의하여 상품의 가치가 감소한 경우<br>
+                                        (3) 개봉 후 시간의 경과로 인하여 상품의 가치가 현저히 감소한 경우<br>
+                                        (4) 상품에 포함된 RFID 가 훼손된 경우<br>
+                                        (5) 고객님의 요청으로 상품에 이니셜 엠보싱 서비스가 진행된 경우</p>
+                                    <p>※ RFID : 제품의 위조와 훼손을 방지하기 위해 상품에 부착된 태그형태의 IC칩</p>
+                                    <p>※ 교환/반품 시 지정 택배사 이용을 권장 드리며 임의로 물품을 발송하는 경우 교환/환불 처리가 지연될 수 있사오니 이 점 유의하여 주시기 바랍니다. </p>
+                                    <p>※ 자세한 사항은 상품 배송 시 함께 동봉된 영수증 뒷면을 참조 해 주시기 바라며 원활한 서비스를 위하여 구매영수증을 보관 하실 것을 권장 드립니다. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion_item">
+                            <p class="accordion_tit last_tit">
+                                구찌 선물포장 서비스
+                            </p>
+                            <div class="accordion_txt_all">
+                                <div class="accoridon_img">
+                                    <img src="img/product_gift1.jpg">
+                                    <img src="img/product_gift2.jpg">
+                                </div>
+                                <div class="accordion_txt">
+                                    <p class="p_tit">구찌 선물포장 서비스</p>
+                                    <p>해당 상품은 구찌의 시그니처인 홀스빗과 Boutique 프린트, 그리고 하우스 웹 (Web)으로 장식된 스페셜 에디션 패키지에 담겨 배송됩니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bag_infor_right">
+                    <div class="infor_img">
+                        <img src="img/product_detail.jpg">
+                    </div>
+                    <div class="infor_txt">
+                        <p class="pro_tit">상품정보</p>
+                        <p class="pro_num">스타일 621220 0YK0G 1000</p>
+                        <p class="pro_ex">2020 봄/여름 구찌 1955 홀스빗 라인에 새로운 실루엣으로 선보이는 탑 핸들 백. 블랙 가죽 소재의 돔 형태, 옵션 가죽 숄더 스트랩. 60년 넘게 이어지는 라인에 현대적인 영감을 주는 오리지널 백에 처음 도입된 디테일을 통합하고 홀스빗을 강조하는 컬렉션. 구찌 특유의 코드인 더블 링과 바 디자인은 승마 세계에서 가져온 하우스의 심볼 중 가장 상징적인 요소.</p>
+                        <div class="infor_list">
+                            <ul>
+                                <li>2020 봄/여름 컬렉션</li>
+                                <li>제조자: 구찌</li>
+                                <li>제조국: 이태리</li>
+                                <li>수입자: (유)구찌코리아</li>
+                                <li>블랙 가죽</li>
+                                <li>골드 톤 메탈 장식</li>
+                                <li>코튼 린넨 안감</li>
+                                <li>앞면에 홀스빗 디테일</li>
+                                <li>백의 하단에 바닥 보호 메탈 장식</li>
+                                <li>내부 지퍼 및 오픈 포켓</li>
+                                <li>가죽 탑 핸들, 9cm 드롭</li>
+                                <li>조절 및 탈착 가능한 가죽 숄더 스트랩, 44cm 드롭</li>
+                                <li>확장된 이중 지퍼 잠금장치</li>
+                                <li>무게: 약 0.77kg</li>
+                                <li>스트랩 길이 조절 가능 (100cm ~ 112cm)</li>
+                                <li>스몰 사이즈: 너비 25cm x 높이 24cm x 둘레 9cm</li>
+                                <li>모델171cm</li>
+                                <li>품질보증기준: A/S 보증기간 2년<br>(상품 이상 시 무상수선, 고객의 부주의로 판단되는 경우 유상수선)</li>
+                                <li>AS 유선접수: 클라이언트서비스 02-3452-1921 / clientservice.kr@gucci.com</li>
+                            </ul>
+                        </div>
+                        <p class="print"><a href="#"><span class="material-icons">print</span> 인쇄</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 추천상품 -->
+        <aside class="record_product_wrap">
+            <!-- 추천상품 타이틀 -->
+            <div class="record_product_tit">추천 상품</div>
+            <!-- //추천상품 타이틀 -->
+            <!-- 추천상품 상품들 -->
+            <div class="record_product">
+                <!-- 추천 상품1 -->
+                <div class="re_products">
+                    <div class="re_products_wrap">
+                        <!-- 카트 추가 버튼 -->
+                        <div class="add_cart_wrap">
+                            <div class="add_cart">
+                                <button title="관심 상품 추가"><i class="material-icons">favorite_border</i></button>
+                            </div>
+                            <div class="add_cart1">
+                                <button title="관심 상품 추가"><i class="material-icons">favorite</i></button>
+                            </div>
+                        </div>
+                        <!-- //카트 추가 버튼 -->
+                        <!-- 상품 링크 -->
+                        <a href="#">
+                            <!-- 추천 상품 이미지 -->
+                            <div class="re_products_img">
+                                <img src="img/record_1.jpg">
+                            </div>
+                            <div class="re_products_img1">
+                                <img src="img/record_1_hover.jpg">
+                            </div>
+                            <div class="re_products_txt">
+                                <h4>[실비] 1969 스몰 탑 핸들 백</h4>
+                                <p>₩ 4,600,000</p>
+                                <p class="shopping">쇼핑하기<i class="material-icons">chevron_right</i></p>
+                            </div>
+                        </a>
+                        <!-- //상품 링크 -->
+                    </div>
+                </div>
+                <!-- //추천 상품1 -->
+                <!-- 추천 상품2 -->
+                <div class="re_products">
+                    <div class="re_products_wrap">
+                        <!-- 카트 추가 버튼 -->
+                        <div class="add_cart_wrap">
+                            <div class="add_cart">
+                                <button title="관심 상품 추가"><i class="material-icons">favorite_border</i></button>
+                            </div>
+                            <div class="add_cart1">
+                                <button title="관심 상품 추가"><i class="material-icons">favorite</i></button>
+                            </div>
+                        </div>
+                        <!-- //카트 추가 버튼 -->
+                        <!-- 상품 링크 -->
+                        <a href="#">
+                            <!-- 추천 상품 이미지 -->
+                            <div class="re_products_img">
+                                <img src="img/record_2.jpg">
+                            </div>
+                            <div class="re_products_img1">
+                                <img src="img/record_2_hover.jpg">
+                            </div>
+                            <div class="re_products_txt">
+                                <h4>[구찌 주미] 스몰 탑 핸들 백</h4>
+                                <p>₩ 3,900,000</p>
+                                <p class="shopping">쇼핑하기<i class="material-icons">chevron_right</i></p>
+                            </div>
+                        </a>
+                        <!-- //상품 링크 -->
+                    </div>
+                </div>
+                <!-- //추천 상품2 -->
+                <!-- 추천 상품3 -->
+                <div class="re_products">
+                    <div class="re_products_wrap">
+                        <!-- 카트 추가 버튼 -->
+                        <div class="add_cart_wrap">
+                            <div class="add_cart">
+                                <button title="관심 상품 추가"><i class="material-icons">favorite_border</i></button>
+                            </div>
+                            <div class="add_cart1">
+                                <button title="관심 상품 추가"><i class="material-icons">favorite</i></button>
+                            </div>
+                        </div>
+                        <!-- //카트 추가 버튼 -->
+                        <!-- 상품 링크 -->
+                        <a href="#">
+                            <!-- 추천 상품 이미지 -->
+                            <div class="re_products_img">
+                                <img src="img/record_3.jpg">
+                            </div>
+                            <div class="re_products_img1">
+                                <img src="img/record_3_hover.jpg">
+                            </div>
+                            <div class="re_products_txt">
+                                <h4>[구찌 주미] 미디엄 탑 핸들 백</h4>
+                                <p>₩ 4,900,000</p>
+                                <p class="shopping">쇼핑하기<i class="material-icons">chevron_right</i></p>
+                            </div>
+                        </a>
+                        <!-- //상품 링크 -->
+                    </div>
+                </div>
+                <!-- //추천 상품3 -->
+                <!-- 추천 상품4 -->
+                <div class="re_products">
+                    <div class="re_products_wrap">
+                        <!-- 카트 추가 버튼 -->
+                        <div class="add_cart_wrap">
+                            <div class="add_cart">
+                                <a href="#" title="관심 상품 추가"><i class="material-icons">favorite_border</i></a>
+                            </div>
+                            <div class="add_cart1">
+                                <button title="관심 상품 추가"><i class="material-icons">favorite</i></button>
+                            </div>
+                        </div>
+                        <!-- //카트 추가 버튼 -->
+                        <!-- 상품 링크 -->
+                        <a href="#">
+                            <!-- 추천 상품 이미지 -->
+                            <div class="re_products_img">
+                                <img src="img/record_4.jpg">
+                            </div>
+                            <div class="re_products_img1">
+                                <img src="img/record_4_hover.jpg">
+                            </div>
+                            <div class="re_products_txt">
+                                <h4>[실비] 1969 페이턴트 가죽 미니 탑 핸들백</h4>
+                                <p>₩ 4,100,000</p>
+                                <p class="shopping">쇼핑하기<i class="material-icons">chevron_right</i></p>
+                            </div>
+                        </a>
+                        <!-- //상품 링크 -->
+                    </div>
+                </div>
+                <!-- //추천 상품4 -->
+            </div>
+            <!-- //추천상품 상품들 -->
+            <!-- 추천상품 버튼 -->
+            <button class="record_btn_prev"><i class="material-icons">keyboard_arrow_left</i></button>
+            <button class="record_btn_next"><i class="material-icons">keyboard_arrow_right</i></button>
+        </aside>
+        <!-- //추천상품 -->
+    </div>
+    <!-- //하단 콘텐츠 -->
+    <footer>
+        <!-- 위로 올라가기 -->
+        <a class="up_btn" href="#"><i class="material-icons">keyboard_arrow_up</i></a>
+        <!-- 푸터 전체 -->
+        <div class="footer_all">
+            <!-- 푸터 윗부분 -->
+            <div class="footer_top">
+                <!-- 푸터 리스트 -->
+                <div class="footers">
+                    <div class="footer_group_title">
+                        특별한 서비스
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="material-icons">card_giftcard</i>구찌 선물포장 서비스</a></li>
+                        <li><a href="#"><i class="material-icons">card_giftcard</i>무이자 할부 서비스</a></li>
+                        <li><a href="#"><i class="material-icons">deck</i>Gucci Osteria da Massimo Bottura</a></li>
+                    </ul>
+                </div>
+                <div class="footers">
+                    <div class="footer_group_title">
+                        고객 문의
+                    </div>
+                    <ul>
+                        <li><a href="#"><strong>클라이언트 서비스</strong></a></li>
+                        <li><a href="#"><strong>자주 묻는 질문(FAQ)</strong></a></li>
+                        <li><a href="#"><strong>교환/환불 정책</strong></a></li>
+                        <li><a href="#">쇼핑가이드</a></li>
+                    </ul>
+                </div>
+                <div class="footers">
+                    <div class="footer_group_title">
+                        기업 정보
+                    </div>
+                    <ul>
+                        <li><a href="#">Gucci 정보</a></li>
+                        <li><a href="#">Gucci Garden</a></li>
+                        <li><a href="#">Gucci Equilibrium</a></li>
+                        <li><a href="#">Code of Ethics</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                        <li><a href="#">이용약관</a></li>
+                    </ul>
+                </div>
+                <div class="footers">
+                    <div class="footer_group_title">
+                        구찌를 만나보세요
+                    </div>
+                    <ul>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#e5dfd9" viewBox="0 0 24 24" class="facebook">
+                                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" /></svg>Facebook</a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#e5dfd9" viewBox="0 0 24 24" class="instagram">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg> Gucci</a></li>
+                        <li><a href="#"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#e5dfd9" viewBox="0 0 24 24" class="instagram">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg> Gucci Beauty</a></a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#e5dfd9" viewBox="0 0 24 24" class="youtube">
+                                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" /></svg>YouTube</a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#e5dfd9" viewBox="0 0 24 24" class="twitter">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" /></svg>Twitter</a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#e5dfd9" viewBox="0 0 24 24" class="kakao">
+                                    <path d="M12 1c-6.628 0-12 4.573-12 10.213 0 2.39.932 4.591 2.427 6.164l-2.427 5.623 7.563-2.26c9.495 2.598 16.437-3.251 16.437-9.527 0-5.64-5.372-10.213-12-10.213z" /></svg>Kakao Talk Channel</a></li>
+                    </ul>
+                </div>
+                <div class="footers">
+                    <form action="" method="get">
+                        <div class="footer_group_title">
+                            매장 찾기
+                        </div>
+                        <input type="text" placeholder="국가, 지역 또는 도시">
+                        <input type="submit" value=">">
+                    </form>
+                </div>
+            </div>
+            <div class="footer_top">
+                <p>
+                    구찌 코리아 유한회사<br>
+                    대표자: 카림 페투스 / 서울시 강남구 영동대로 517, 35층(삼성동, 아셈타워) / 사업자등록번호: 120-81-79834<br>
+                    통신판매업 신고번호 제 2015-서울강남-00052 호 (<a href="#">사업자 정보 확인</a>)<br>
+                    개인정보보호책임자: 유인경 / 호스팅 서비스: Rackspace Hosting<br>
+                    클라이언트서비스센터 02-3452-1921 메일 문의 <a href="mailto: clientservice.kr@gucci.com">clientservice.kr@gucci.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body></html>
